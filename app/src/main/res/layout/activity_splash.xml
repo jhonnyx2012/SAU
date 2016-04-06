@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uneg.software.sau.activities.SplashActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/logoconsombra_sau"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/logo_ssu"
+        android:adjustViewBounds="true"
+        android:layout_margin="20dp" />
+</FrameLayout>

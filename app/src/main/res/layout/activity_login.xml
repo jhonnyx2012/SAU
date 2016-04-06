@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uneg.software.sau.activities.LoginActivity"
+    android:background="@color/colorPrimaryDark">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_gravity="top|center"
+        android:src="@drawable/logoconsombra_sau"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo_sau"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="60dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="60dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <uneg.software.sau.views.CustomFontEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_username_512"
+                    android:drawablePadding="15dp"
+                    android:id="@+id/username"
+                    customfont:fontName="AvenirMedium.otf"
+                    android:hint="Usuario"
+                    android:textColorHint="#ffcecece"
+                    android:layout_marginRight="10dp"
+                    android:textSize="17dp"
+                    android:textColor="#ffffffff"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <uneg.software.sau.views.CustomFontEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/password"
+                    customfont:fontName="AvenirMedium.otf"
+                    android:password="true"
+                    android:hint="Contraseña"
+                    android:drawableLeft="@drawable/ic_contrasea_512"
+                    android:drawablePadding="15dp"
+                    android:textColorHint="#ffcecece"
+                    android:layout_marginRight="10dp"
+                    android:textSize="17dp"
+                    android:textColor="#ffffffff"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <uneg.software.sau.views.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/olvide"
+                android:textSize="14dp"
+                android:textColor="#fffdfcf9"
+                customfont:fontName="AvenirLight.otf"
+                android:text="Olvide mi contraseña"
+                android:layout_gravity="center_horizontal|right"
+                android:padding="15dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <uneg.software.sau.views.CustomFontButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iniciar_sesion"
+                    android:textSize="17dp"
+                    android:textColor="#fffdfcf9"
+                    customfont:fontName="AvenirMedium.otf"
+                    android:text="Iniciar Sesión"
+                    android:textAllCaps="false"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:orientation="horizontal"
+                    android:background="@drawable/button_background"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
+
+                    <uneg.software.sau.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¿No tienes una cuenta? "
+                        android:textColor="#fffdfcf9"
+
+                        customfont:fontName="AvenirLight.otf"
+                        android:id="@+id/textView" />
+
+                    <uneg.software.sau.views.CustomFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrarse"
+                        android:id="@+id/registrarse"
+                        android:textColor="#fffdfcf9"
+
+                        customfont:fontName="AvenirDemi.otf"
+
+                        android:padding="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+</FrameLayout>

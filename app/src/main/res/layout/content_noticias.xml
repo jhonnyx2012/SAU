@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="uneg.software.sau.sau.MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logoconsombra_sau_topbar"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <uneg.software.sau.views.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customfont:fontName="AvenirDemi.otf"
+        android:text="Noticias"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="105dp"
+        android:textSize="17dp" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    android:layout_marginRight="5dp">
+
+    <uneg.software.sau.views.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customfont:fontName="AvenirDemi.otf"
+        android:id="@+id/nombre"
+        android:text="Jhonny Barrios"
+        android:layout_gravity="center_vertical|right"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+    <uneg.software.sau.views.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customfont:fontName="AvenirDemi.otf"
+        android:id="@+id/username"
+        android:text="jhonnyx"
+        android:textSize="10dp"
+        android:layout_gravity="center_vertical|right"
+        android:textColor="#d2d2d2" />
+    <uneg.software.sau.views.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customfont:fontName="AvenirDemi.otf"
+        android:id="@+id/nivel"
+        android:text="nivel"
+        android:textSize="10dp"
+        android:layout_gravity="center_vertical|right"
+        android:textColor="#d2d2d2" />
+</LinearLayout>
+
+</FrameLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</LinearLayout>

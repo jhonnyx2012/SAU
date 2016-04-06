@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/todas"
+            android:icon="@drawable/add"
+            android:title="Todas" />
+        <item
+            android:id="@+id/pasillo"
+            android:icon="@drawable/pasillo"
+            android:title="Pasillo" />
+        <item
+            android:id="@+id/cafetin"
+            android:icon="@drawable/cafetin"
+            android:title="Cafetin" />
+        <item
+            android:id="@+id/cerca"
+            android:icon="@drawable/cerca"
+            android:title="Cerca perimetral" />
+        <item
+            android:id="@+id/patio"
+            android:icon="@drawable/patio"
+            android:title="Patio central" />
+
+        <item
+            android:id="@+id/estacionamiento"
+            android:icon="@drawable/estacionamiento"
+            android:title="Estacionamiento" />
+        <item
+            android:id="@+id/transporte"
+            android:icon="@drawable/estacionamiento"
+            android:title="Transporte" />
+
+    </group>
+</menu>
